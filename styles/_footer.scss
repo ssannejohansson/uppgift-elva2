@@ -1,0 +1,57 @@
+@use 'fonts';
+
+.footer {
+    margin-left: 125px;
+    margin-right: 125px;
+    margin-bottom: 26px;
+    margin-top: 100px;
+    font-size: 18px;
+    font-weight: bold;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: (repeat(1, 1fr));
+    
+    &__links {
+        grid-column: 3/5;
+        justify-self: right;
+        display: flex;
+        justify-content: space-between;
+        font-family: fonts.$main-font;
+        color: fonts.$main-txt-color;
+        margin-left: 30px;
+        list-style: none;
+        text-decoration: none;
+    }
+
+    &__links li, &__links li a {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 30px;
+        text-decoration: none; 
+        color: #111111;
+    }
+
+    &__links li:hover, &__links li a:hover {
+        color: #4A4FF2;
+    }
+}
+    
+.logo {
+    grid-column: 1/1;
+    width: 90px;
+    height: 19px; 
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    max-width: 95px;
+    width: 100%;
+    grid-column: 5/5;
+    justify-self: right;
+}
+
+.fa-dribbble, .fa-instagram, .fa-twitter {
+    width: 15px;
+    color: #000;
+}

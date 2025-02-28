@@ -1,3 +1,5 @@
+@use 'fonts';
+
 .header {
     margin-top: 61px;
     margin-left: 125px;
@@ -7,23 +9,23 @@
     justify-content: space-between;
 
     &__logo {
-    width: 90px;
-    height: 19px; 
+        width: 90px;
+        height: 19px; 
 }
 } 
 
 .nav {
-    font-family: "mulish", serif;
+    font-family: fonts.$main-font;
+    color: fonts.$main-txt-color;
     font-size: 18px;
     font-weight: bold; 
     list-style: none;
     text-decoration: none;
 
     &__links {
-     display: flex; 
-     margin-left: 30px;
+        display: flex; 
+        margin-left: 30px;
     }
-   
 
     &__links li, &__links li a {
         text-decoration: none; 

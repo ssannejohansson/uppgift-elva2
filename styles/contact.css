@@ -17,6 +17,7 @@
 
 .nav {
   font-family: "mulish", serif;
+  color: #111111;
   font-size: 18px;
   font-weight: bold;
   list-style: none;
@@ -35,4 +36,209 @@
 }
 .nav__links li:hover, .nav__links li a:hover {
   color: #4A4FF2;
+}
+
+.footer {
+  margin-left: 125px;
+  margin-right: 125px;
+  margin-bottom: 26px;
+  margin-top: 100px;
+  font-size: 18px;
+  font-weight: bold;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: (1fr)[1];
+  grid-template-rows: repeat(1, 1fr);
+}
+
+.footer > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+.footer > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+}
+
+.footer > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+
+.footer > *:nth-child(4) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+}
+
+.footer > *:nth-child(5) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+}
+.footer__links {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-column: 3/5;
+  -ms-grid-column-align: right;
+      justify-self: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: "mulish", serif;
+  color: #111111;
+  margin-left: 30px;
+  list-style: none;
+  text-decoration: none;
+}
+.footer__links li, .footer__links li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 30px;
+  text-decoration: none;
+  color: #111111;
+}
+.footer__links li:hover, .footer__links li a:hover {
+  color: #4A4FF2;
+}
+
+.logo {
+  -ms-grid-column: 1;
+  grid-column: 1/1;
+  width: 90px;
+  height: 19px;
+}
+
+.icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 95px;
+  width: 100%;
+  -ms-grid-column: 5;
+  grid-column: 5/5;
+  -ms-grid-column-align: right;
+      justify-self: right;
+}
+
+.fa-dribbble, .fa-instagram, .fa-twitter {
+  width: 15px;
+  color: #000;
+}
+
+* {
+  font-family: "mulish", serif;
+  color: #111111;
+}
+
+main {
+  background-color: #fff;
+  margin-left: 125px;
+  margin-right: 125px;
+}
+
+.top {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.top__head {
+  max-width: 475px;
+  width: 100%;
+  min-height: 174px;
+  height: 100%;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 55px;
+  margin-bottom: 22px;
+}
+.top__info {
+  max-width: 445px;
+  width: 100%;
+  min-height: 56px;
+  height: 100%;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 26px;
+  opacity: 80%;
+}
+
+.form__container {
+  max-width: 475px;
+  width: 100%;
+}
+
+.form {
+  max-width: 475px;
+  width: 100%;
+  min-height: 291px;
+  height: 100%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.form__label {
+  height: 46px;
+}
+.form__input {
+  border: none;
+}
+.form__input::-webkit-input-placeholder {
+  border-bottom: 1px solid #D8D8D8;
+}
+.form__input::-moz-placeholder {
+  border-bottom: 1px solid #D8D8D8;
+}
+.form__input:-ms-input-placeholder {
+  border-bottom: 1px solid #D8D8D8;
+}
+.form__input::-ms-input-placeholder {
+  border-bottom: 1px solid #D8D8D8;
+}
+.form__input::placeholder {
+  border-bottom: 1px solid #D8D8D8;
+}
+
+.button {
+  margin-top: 38px;
+  width: 125px;
+  height: 50px;
+  background-color: #4A4FF2;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  border: none;
+}
+
+.button:hover {
+  background-color: #3437a3;
+  color: #fff;
+}
+
+.img__3 {
+  margin-top: 120px;
+  width: 100%;
 }

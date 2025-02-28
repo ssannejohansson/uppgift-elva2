@@ -1,0 +1,45 @@
+.form__container {
+    max-width: 475px;
+    width: 100%;
+
+}
+
+.form {
+    max-width: 475px;
+    width: 100%;
+    min-height: 291px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+
+    &__label {
+        height: 46px;
+    }
+
+    &__input {
+        border: none;
+    }
+
+    &__input::placeholder {
+    border-bottom: 1px solid #D8D8D8;
+
+    }
+
+    }
+
+    .button {
+        margin-top: 38px;
+        width: 125px;
+        height: 50px; 
+        background-color: #4A4FF2;
+        font-size: 16px;
+        font-weight: bold;
+        color: #fff; 
+        border: none; 
+ }
+    .button:hover {
+            background-color: #3437a3;
+            color: #fff; 
+        }
+   

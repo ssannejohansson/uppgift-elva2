@@ -1,1 +1,112 @@
+@use 'fonts';
+
 @import 'head';
+@import 'footer';
+
+* {
+    font-family: fonts.$main-font;
+    color: fonts.$main-txt-color;
+}
+
+main {
+    background-color: #fff;
+    margin-left: 125px;
+    margin-right: 125px; 
+}
+
+.title {
+    width: 100%;
+    min-height: 251px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left {
+    max-width: 635px;
+    width: 100%;
+    min-height: 251px;
+    height: 100%;
+
+    &__head {
+        font-weight: bold; 
+        font-size: 22px;
+        letter-spacing: -0.42px; 
+        color: #4A4FF2;  
+        margin-bottom: 32px; 
+    } 
+
+    &__presentation {
+        font-weight: bold;
+        font-size: 40px; 
+        line-height: 60px; 
+    }
+
+    &__blue {
+        color: #4A4FF2;
+    }
+}
+
+.right {
+    max-width: 212px;
+    width: 100%;
+    min-height: 34px;
+    height: 100%;
+    align-self: flex-end; 
+
+    &__text {
+        margin-top: 9px;
+        font-size: 18px;
+        font-style: italic; 
+        opacity: 60%; 
+    }
+
+    &__line {
+        width: 30px;
+        border-bottom: 2px solid;
+        opacity: 50%;
+    }
+}
+
+@import 'grid';
+
+.info__container {
+    margin-top: 91px;
+    width: 100%;
+    min-height: 106px;
+    height: 100%; 
+    display: flex; 
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 101px;
+}
+
+ul {
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 60px;
+    row-gap: 10px;
+}
+
+.info {
+    max-width: 635px;
+    width: 100%;
+    min-height: 106px;
+    height: 100%; 
+
+    &__info {
+        font-size: 28px;
+        font-weight: bold; 
+        line-height: 38px;
+    }
+
+    &__list {
+        font-style: none; 
+        font-size: 18px;
+        opacity: 60%;
+    }
+}
+
+@import 'award-grid'; 

@@ -1,0 +1,27 @@
+.project {
+    max-width: 335px;
+    width: 100%;
+    min-height: 343px;
+    height: 100%; 
+    display: grid; 
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: repeat(6, 1fr);
+
+    &__title {
+        font-size: 18px;
+        font-weight: bold;
+        opacity: 50%;
+    }
+
+    &__info {
+        font-size: 18px;
+        font-weight: bold;
+    }
+}
+
+.p {
+    background-color: #fff; 
+    justify-content: left; 
+    align-content: center;
+    border-bottom: 1px solid #97979752;
+}

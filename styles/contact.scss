@@ -1,1 +1,51 @@
+@use 'fonts';
+
 @import 'head';
+@import 'footer';
+
+* {
+    font-family: fonts.$main-font;
+    color: fonts.$main-txt-color;
+}
+
+main {
+    background-color: #fff;
+    margin-left: 125px;
+    margin-right: 125px; 
+}
+
+.top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__head {
+        max-width: 475px;
+        width: 100%;
+        min-height: 174px;
+        height: 100%;
+        font-size: 40px;
+        font-weight: bold;
+        line-height: 55px; 
+        margin-bottom: 22px;
+    }
+
+    &__info {
+        max-width: 445px;
+        width: 100%;
+        min-height: 56px;
+        height: 100%; 
+        font-size: 16px;
+        font-style: normal;
+        line-height: 26px;
+        opacity: 80%; 
+    }
+}
+
+@import 'form';
+
+.img__3 {
+    margin-top: 120px;
+    width: 100%; 
+}
