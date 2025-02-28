@@ -1,0 +1,38 @@
+.header {
+  margin-top: 61px;
+  margin-left: 125px;
+  margin-right: 125px;
+  margin-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header__logo {
+  width: 90px;
+  height: 19px;
+}
+
+.nav {
+  font-family: "mulish", serif;
+  font-size: 18px;
+  font-weight: bold;
+  list-style: none;
+  text-decoration: none;
+}
+.nav__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 30px;
+}
+.nav__links li, .nav__links li a {
+  text-decoration: none;
+  color: #111111;
+  margin-left: 30px;
+}
+.nav__links li:hover, .nav__links li a:hover {
+  color: #4A4FF2;
+}

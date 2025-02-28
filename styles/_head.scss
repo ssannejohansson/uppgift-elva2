@@ -1,0 +1,37 @@
+.header {
+    margin-top: 61px;
+    margin-left: 125px;
+    margin-right: 125px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+
+    &__logo {
+    width: 90px;
+    height: 19px; 
+}
+} 
+
+.nav {
+    font-family: "mulish", serif;
+    font-size: 18px;
+    font-weight: bold; 
+    list-style: none;
+    text-decoration: none;
+
+    &__links {
+     display: flex; 
+     margin-left: 30px;
+    }
+   
+
+    &__links li, &__links li a {
+        text-decoration: none; 
+        color: #111111;
+        margin-left: 30px;
+    }
+
+    &__links li:hover, &__links li a:hover {
+        color: #4A4FF2;
+    }
+}
